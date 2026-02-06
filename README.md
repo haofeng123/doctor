@@ -1,16 +1,18 @@
-# 运行文档
+## Getting Started
 
-本项目基于 [**React Native**](https://reactnative.dev)，使用 [`@react-native-community/cli`](https://github.com/react-native-community/cli) 创建。
-
-## 开始之前
-
-> **注意**：请先完成 [环境搭建](https://reactnative.dev/docs/set-up-your-environment) 再进行以下步骤。
+This project is built with [**React Native**](https://reactnative.dev) and bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 ---
 
-## 第一步：安装依赖
+## Before You Begin
 
-在项目根目录执行：
+> **Note:** Make sure you have completed the [Environment Setup](https://reactnative.dev/docs/set-up-your-environment) before following the steps below.
+
+---
+
+## Step 1: Install Dependencies
+
+Run the following command in the project root directory:
 
 ```sh
 pnpm install
@@ -18,9 +20,9 @@ pnpm install
 
 ---
 
-## 第二步：安装 iOS Pods
+## Step 2: Install iOS Pods
 
-进入 **ios** 目录并安装 CocoaPods 依赖：
+Navigate to the **ios** directory and install CocoaPods dependencies:
 
 ```sh
 cd ios
@@ -28,51 +30,62 @@ bundle exec pod install
 cd ..
 ```
 
-首次使用 CocoaPods 时如未安装 bundler，可先执行 `bundle install`。  
-每次更新原生依赖后，需重新执行上述 `pod install`。
+If you are using CocoaPods for the first time and do not have Bundler installed, run:
 
-更多说明见 [CocoaPods 入门](https://guides.cocoapods.org/using/getting-started.html)。
+```sh
+bundle install
+```
+
+Whenever native dependencies are updated, you should run `pod install` again.
+
+For more information, see the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html).
 
 ---
 
-## 第三步：构建并运行（仅 iOS）
+## Step 3: Build and Run (iOS Only)
 
-1. **启动 Metro**（在项目根目录）：
+### 1. Start Metro
+
+In the project root directory:
 
 ```sh
 pnpm start
 ```
 
-2. **新开一个终端**，在项目根目录运行 iOS 应用：
+### 2. Run the iOS App
+
+Open a **new terminal window**, then run:
 
 ```sh
 pnpm run ios
 ```
 
-若环境正确，应用会在 iOS 模拟器或已连接的真机上启动。  
-也可在 **Xcode** 中打开 `ios/doctor.xcworkspace` 进行构建和运行。
+If your environment is configured correctly, the app will launch on the iOS simulator or a connected device.
+
+You can also open `ios/doctor.xcworkspace` in **Xcode** to build and run the project.
 
 ---
 
-## 修改应用与重载
+## Editing the App & Reloading
 
-用编辑器修改 `App.tsx` 等文件，保存后应用会通过 [Fast Refresh](https://reactnative.dev/docs/fast-refresh) 自动更新。
+Edit files such as `App.tsx` using your preferred editor.
+After saving, the app will automatically update using [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
 
-需要**完全重新加载**时，在 iOS 模拟器中按 <kbd>R</kbd>。
-
----
-
-## 常见问题
-
-若上述步骤无法正常运行，可参考官方 [故障排除](https://reactnative.dev/docs/troubleshooting)。
+To perform a **full reload**, press **R** in the iOS simulator.
 
 ---
 
-## 延伸阅读
+## Troubleshooting
 
-- [React Native 官网](https://reactnative.dev)
-- [环境搭建](https://reactnative.dev/docs/environment-setup)
-- [入门教程](https://reactnative.dev/docs/getting-started)
-- [官方博客](https://reactnative.dev/blog)
-- [GitHub 仓库](https://github.com/facebook/react-native)
-# doctor
+If you encounter issues during setup or running the app, refer to the official [Troubleshooting Guide](https://reactnative.dev/docs/troubleshooting).
+
+---
+
+## Learn More
+
+* [React Native Official Website](https://reactnative.dev)
+* [Environment Setup Guide](https://reactnative.dev/docs/environment-setup)
+* [Getting Started Guide](https://reactnative.dev/docs/getting-started)
+* [React Native Blog](https://reactnative.dev/blog)
+* [React Native GitHub Repository](https://github.com/facebook/react-native)
+
